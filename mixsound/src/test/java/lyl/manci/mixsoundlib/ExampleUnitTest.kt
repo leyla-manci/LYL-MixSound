@@ -1,4 +1,4 @@
-package lyl.manci.mixsound
+package lyl.manci.mixsoundlib
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

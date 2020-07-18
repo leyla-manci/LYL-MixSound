@@ -1,4 +1,4 @@
-package lyl.manci.mixsound
+package lyl.manci.mixsoundlib
 
 import android.content.Intent
 import android.speech.RecognizerIntent
@@ -19,7 +19,7 @@ import java.util.*
 
 class MixSound : TextToSpeech.OnInitListener {
     val textToSpeech by lazy { TextToSpeech(appCompatActivity, this) }
-    private val promptText = "Kulağıma Fısılda.."
+    private val promptText = "Mikrofona Fısılda.. :)"
     private val recognizerIntent: Intent by lazy { Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH) }
 
     fun changeSound(soundType: SoundType) {

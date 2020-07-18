@@ -1,4 +1,4 @@
-package lyl.manci.mixsound
+package lyl.manci.mixsoundlib
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("lyl.manci.mixsound.test", appContext.packageName)
+        assertEquals("lyl.manci.mixsoundlib.test", appContext.packageName)
     }
 }
