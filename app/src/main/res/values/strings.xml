@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MixSound</string>
+    <string name="mic">Press Talk</string>
+    <string name="imgFast">Listen as Fast</string>
+    <string name="imgSlow">Listen as Slow</string>
+    <string name="imgChipmunk">Listen as Chipmunk</string>
+    <string name="imgDartVader">Listen as DartVader</string>
 </resources>
