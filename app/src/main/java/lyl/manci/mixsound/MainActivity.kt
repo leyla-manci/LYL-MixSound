@@ -1,9 +1,13 @@
 package lyl.manci.mixsound
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.speech.RecognizerIntent
+import android.view.MotionEvent
+import android.view.View
+import android.view.animation.LinearInterpolator
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +20,8 @@ const val MIX_SOUND_INITIAL_VALUE = "LYLTESTINITIALVALUE"
 class MainActivity : AppCompatActivity() {
     val ttsInstance = MixSound.getInstance(this)
     val mainContext: Context = this
+
+    @SuppressLint("ClickableViewAccessibility", "Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,6 +43,11 @@ class MainActivity : AppCompatActivity() {
 
             "imgMic clicked !! " extShowToast mainContext
         }
+/*you can use setOnClickListener or setOntouchListener
+* I added an animetad extra function to use so close the clicklistener*/
+/*
+
+
         slowImg.setOnClickListener {
             /*   ttsInstance.textToSpeech.stop()
                ttsInstance.changeSound(SoundType.Slow)
@@ -68,10 +79,38 @@ class MainActivity : AppCompatActivity() {
                 SoundType.DarthVader,
                 ttsInstance
             )
+
+
+
+        }
+*/
+        fastImg.setOnTouchListener { view, event ->
+            "fastImg clicked !! ".extPreparePlay(mainContext, SoundType.Fast, ttsInstance)
+            extAnimeteView(view, event)
+
+        }
+        chipmunkImg.setOnTouchListener { view, event ->
+            "chipMunkImg clicked !! ".extPreparePlay(mainContext, SoundType.Chipmunk, ttsInstance)
+            extAnimeteView(view, event)
+
+        }
+
+        dartVaderImg.setOnTouchListener { view, event ->
+            "dartVaderImg clicked !! ".extPreparePlay(
+                mainContext,
+                SoundType.DarthVader,
+                ttsInstance
+            )
+            extAnimeteView(view, event)
+
+        }
+        slowImg.setOnTouchListener { view, event ->
+            "slowImg clicked !! ".extPreparePlay(mainContext, SoundType.Slow, ttsInstance)
+            extAnimeteView(view, event)
+
         }
 
     }
-
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -126,6 +165,23 @@ class MainActivity : AppCompatActivity() {
 
 }
 
+
+fun extAnimeteView(view: View, event: MotionEvent): Boolean {
+
+    view.alpha = if (event.action == MotionEvent.ACTION_DOWN)
+        0.5f
+    else 1f
+
+    view.animate().apply {
+        interpolator = LinearInterpolator()
+
+        duration = 500
+        alpha(view.alpha)
+        startDelay = 1000
+        start()
+    }
+    return true
+}
 
 fun String.extPreparePlay(context: Context, soundType: SoundType, insTts: MixSound) {
     /*if it is not the first time that user save record and
