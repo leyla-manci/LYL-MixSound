@@ -8,9 +8,12 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="326dp"
-        android:layout_height="457dp"
+        android:layout_width="337dp"
+        android:layout_height="489dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="80dp"
         android:background="#56104C53"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,107 +22,72 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.722">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="141dp">
-
-            <ImageView
-                android:id="@+id/imageMicId"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:layout_margin="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="24dp"
-                android:layout_weight="1"
-                android:contentDescription="@string/mic"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.515"
-                app:srcCompat="@drawable/mic"
-                tools:srcCompat="@drawable/mic" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="142dp">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageFastId"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:contentDescription="@string/imgFast"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageSlowId"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/fast" />
 
             <ImageView
                 android:id="@+id/imageSlowId"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="72dp"
-                android:layout_marginRight="72dp"
-                android:layout_marginBottom="24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:contentDescription="@string/imgSlow"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.517"
                 app:srcCompat="@drawable/slow" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="153dp">
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
 
             <ImageView
                 android:id="@+id/imageChipmunkId"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="24dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:contentDescription="@string/imgChipmunk"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.466"
                 app:srcCompat="@drawable/chipmunk" />
 
             <ImageView
                 android:id="@+id/ImageDarthVaderId"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:contentDescription="@string/imgDartVader"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/imageChipmunkId"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.466"
                 app:srcCompat="@drawable/dartvader" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageMicId"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/mic"
+                app:srcCompat="@drawable/mic"
+                tools:srcCompat="@drawable/mic" />
+        </LinearLayout>
 
     </LinearLayout>
 
