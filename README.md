@@ -39,6 +39,7 @@ mixsound
 ***
 -Katkı Sunanlar---
 * Cate : https://cate.blog/2016/01/20/android-touch-to-change-image/
-* Gökhan Öztürk https://github.com/KeKod/MixSound
+* Gökhan Öztürk : https://github.com/KeKod/MixSound
+* Steve Pomeroy : https://github.com/xxv/android-lifecycle
 
 * Leyla Akmancı | [leyla.manci@gmail.com](mailto:leyla.manci@gmail.com)
