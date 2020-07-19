@@ -37,5 +37,8 @@ mixsound
 * life cycle for saveinstancestate
 
 ***
+-Katkı Sunanlar---
+* Cate : https://cate.blog/2016/01/20/android-touch-to-change-image/
+* Gökhan Öztürk https://github.com/KeKod/MixSound
 
 * Leyla Akmancı | [leyla.manci@gmail.com](mailto:leyla.manci@gmail.com)
