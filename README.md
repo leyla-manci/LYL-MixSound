@@ -4,7 +4,11 @@ mixsound
 
 
 ![Background Image]( https://github.com/leyla-manci/Android-LifeCycle/blob/master/app/src/main/res/mipmap-hdpi/design_v1.png)
+* v.1.0.0
 ![Background Image]( https://github.com/leyla-manci/Android-LifeCycle/blob/master/app/src/main/res/mipmap-hdpi/design_v2.png)
+* v.1.0.1
+![Background Image]( https://github.com/leyla-manci/Android-LifeCycle/blob/master/app/src/main/res/mipmap-hdpi/kapsamli-lifecycle.png)
+* life cycle for saveinstancestate
 
 
 
