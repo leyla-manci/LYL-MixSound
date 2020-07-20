@@ -42,6 +42,18 @@ mixsound
  <td>
 <a href="https://gist.github.com/leyla-manci/9c7a1767a56103e089a9409eb991b06c"> Click for Sample Gist ❤️ </a> 
  </td></tr>
+ <tr>
+
+<td>
+<p>  /*define this selector as xml file on your drawable directory than give it to your view as background*/
+   </p>
+ </td>
+ <td>
+<a href="https://gist.github.com/leyla-manci/f254acf3deb9501502954de532a47ef8"> Click for Sample Gist ❤️ </a> 
+ </td>
+
+
+</tr>
  </table>
 
 
