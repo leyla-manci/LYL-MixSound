@@ -5,4 +5,6 @@
     <string name="imgSlow">Listen as Slow</string>
     <string name="imgChipmunk">Listen as Chipmunk</string>
     <string name="imgDartVader">Listen as DartVader</string>
+    <string name="app_description">Mix Sound</string>
+
 </resources>
