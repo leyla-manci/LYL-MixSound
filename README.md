@@ -54,6 +54,21 @@ mixsound
 
 
 </tr>
+
+ <tr>
+
+<td>
+<p> to hide action bar use NoActionBar on manifest
+   </p>
+ </td>
+ <td>
+<a href="https://gist.github.com/leyla-manci/3154ec30d69730eeb299f7399c46de1b"> Click for Sample Gist ❤️ </a> 
+ </td>
+
+
+</tr>
+
+
  </table>
 
 
