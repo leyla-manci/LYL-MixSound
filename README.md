@@ -35,7 +35,8 @@ mixsound
 ***
 <table><tr><td></td><td></td></tr></table>
 <table><tr><td>
- ![Image](https://github.com/leyla-manci/Android-LifeCycle/blob/master/app/src/main/res/mipmap-hdpi/design_v3.png)
+ <img src="https://github.com/leyla-manci/Android-LifeCycle/blob/master/app/src/main/res/mipmap-hdpi/design_v3.png" alt="Girl in a jacket">
+
 * v.1.0.2
  </td>
  <td>
