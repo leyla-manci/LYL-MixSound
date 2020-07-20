@@ -33,7 +33,7 @@ mixsound
 ![Background Image]( https://github.com/leyla-manci/Android-LifeCycle/blob/master/app/src/main/res/mipmap-hdpi/design_v2.png)
 * v.1.0.1
 ***
-[Image](https://github.com/leyla-manci/Android-LifeCycle/blob/master/app/src/main/res/mipmap-hdpi/design_v3.png)
+![Image](https://github.com/leyla-manci/Android-LifeCycle/blob/master/app/src/main/res/mipmap-hdpi/design_v3.png)
 * v.1.0.2
 ***
 ![Background Image]( https://github.com/leyla-manci/Android-LifeCycle/blob/master/app/src/main/res/mipmap-hdpi/kapsamli-lifecycle.png)
